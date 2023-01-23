@@ -19,6 +19,11 @@
     border: 3px solid v.$color-white;
     border-radius: 50%;
     margin-right: 2rem;
+
+    @include v.large-screen {
+      width: 7.8rem;
+      height: 7.8rem;
+    }
   }
 
 	p {
