@@ -1,0 +1,28 @@
+@use './styles/variables.scss' as v;
+
+* {
+  box-sizing: inherit;
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: v.$font-family-primary;
+}
+
+body {
+
+}
+
+#root {
+  min-height: 100vh;
+  height: fit-content;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: v.$background-color;
+}

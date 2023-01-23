@@ -1,0 +1,6 @@
+@use '../../styles/variables.scss' as v;
+
+.container {
+  background-color: v.$color-soft-black;
+  border-radius: 1.5rem;
+}

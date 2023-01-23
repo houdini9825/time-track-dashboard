@@ -1,0 +1,120 @@
+@use '../../styles/variables.scss' as v;
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+.typeIcon {
+  position: absolute;
+  width: 9rem;
+  height: 9rem;
+  align-self: flex-end;
+  translate: -2rem -1.2rem;
+
+  @include v.large-screen {
+    width: 7.8rem;
+    height: 7.8rem;
+  }
+}
+
+.dataContainer {
+  padding: 2.8rem 2.4rem;
+  border-radius: 1.5rem;
+  background-color: v.$color-soft-black;
+  margin-top: 3.8rem;
+  z-index: 5;
+
+  @include v.large-screen {
+    padding: 3rem;
+    margin-top: 4.5rem;
+  }
+}
+
+
+.playContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h3 {
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    font-weight: v.$font-weight-bold;
+    color: v.$color-white;
+
+    
+  }
+
+  img {
+    height: 0.5rem;
+    width: 2.1rem;
+
+    &:hover {
+      cursor: pointer;
+      filter:brightness(100);
+    }
+
+    &:active {
+      translate: 0 0.5px;
+    }
+  }
+}
+
+.amtContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.6rem;
+
+  @include v.large-screen {
+    flex-direction: column;
+    margin-top: 2.4rem;
+    align-items: flex-start;
+  }
+
+  .currAmt {
+    color: v.$color-white;
+    font-weight: v.$font-weight-light;
+    line-height: 3.8rem;
+    font-size: 3.2rem;
+
+    @include v.large-screen {
+      font-size: 5.6rem;
+      line-height: 6.6rem;
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  .prevAmt {
+    font-weight: v.$font-weight-regular;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: v.$color-light-gray;
+  }
+}
+
+.orange {
+  background-color: v.$color-orange;
+}
+
+.green {
+  background-color: v.$color-green;
+}
+
+.red {
+  background-color: v.$color-red;
+}
+
+.blue {
+  background-color: v.$color-blue;
+}
+
+.purple {
+  background-color: v.$color-dark-purple;
+}
+
+.yellow {
+  background-color: v.$color-yellow;
+}

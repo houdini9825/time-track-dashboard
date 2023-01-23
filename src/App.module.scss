@@ -1,0 +1,18 @@
+@use './styles/variables.scss' as v;
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+  margin: 8.1rem 0;
+
+  @include v.large-screen {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+    width: 111rem;
+  }
+}
+
+.namePerContainer {
+  grid-row: span 2;
+}

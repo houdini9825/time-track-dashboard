@@ -1,0 +1,29 @@
+@use '../../styles/variables.scss' as v;
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 3.2rem;
+
+  @include v.large-screen {
+    flex-direction: column;
+    height: 32%;
+  }
+
+
+  p {
+  color: v.$color-gray;
+  font-size: 1.8rem;
+  font-weight: v.$font-weight-regular;
+  line-height: 2.1rem;
+
+  &:hover {
+    cursor: pointer;
+    color: v.$color-white;
+  }
+  }
+
+  .selected {
+    color: v.$color-white;
+  }
+}
